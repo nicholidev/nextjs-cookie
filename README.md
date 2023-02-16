@@ -287,3 +287,6 @@ the server in the future if the browser does not have an HTTPS connection.
 ## License
 
 [MIT](https://github.com/nicholidev/nextjs-cookie/blob/main/LICENSE)
+
+## Author
+[Nicholi Jin](https://nicholijin.com)
