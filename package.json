@@ -2,10 +2,12 @@
   "name": "nextjs-cookie",
   "version": "1.0.4",
   "description": "Set & Remove cookies in nextjs",
-  "main": "lib/index.js",
-  "type": "lib/index.d.ts",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc -p tsconfig.json && tsc -p tsconfig-cjs.json",
+    "prepublish": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -24,11 +26,11 @@
     "ssr",
     "auth"
   ],
-  "author": {
-    "name": "Nicholi Jin",
-    "email": "nicholijin@gmail.com"
-  },
+  "author": "Nicholi Jin <nicholijin@gmail.com> (https://nicholijin.com)",
   "license": "MIT",
+  "directories": {
+    "lib": "lib"
+  },
   "bugs": {
     "url": "https://github.com/nicholidev/nextjs-cookie/issues"
   },
@@ -40,5 +42,8 @@
   },
   "devDependencies": {
     "typescript": "^4.4.3"
-  }
+  },
+  "files": [
+    "lib/"
+  ]
 }
