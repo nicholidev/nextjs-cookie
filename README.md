@@ -1,5 +1,5 @@
 
-<h1 align="center">Next.Js Cookies</h1>
+<h1 align="center">Next.Js Cookies (nextjs-cookie)</h1>
 <p align="center">Set, Delete, Update Cookies</p>
 <p align="center">
 <a href="https://www.npmjs.com/package/nextjs-cookie">
